@@ -7,7 +7,9 @@ font-size: 62.5%;
 /* khôi phục lại cỡ chữ mặc định theo rem */
 body{
     font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
+display: flex;
+flex-direction: column;
 }
 /*=================== common ====================================*/
 a{
@@ -52,3 +54,194 @@ padding: 36px 0 20px;
     color: #171100;
     text-shadow: 1px 0 0 currentColor;
  } 
+
+ .body .media-block{
+    display: flex;
+justify-content: flex-end; 
+margin-top: -480px;
+}
+
+.body .content-block{
+    margin-top: 100px;
+}
+.body .content-block h1{
+font-weight: bold;
+font-size: 5rem;
+
+margin-bottom: 20px;
+
+}
+.body .content-block h2{
+    font-size: 30px;
+color: #cccccc;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.body .content-block p{
+    font-size: 1.6rem;
+    line-height: 1.8;/* giúp dòng cách nhau thoáng hơn*/
+    text-align: left;/*căn lề trái*/
+    margin-bottom: 16px;/*tạo khoảng cách giữa các đoạn*/
+    max-width: 624px;/*giới hạn CR giống kích thước trong hình*/
+word-wrap: break-word;/*ngắt từ khi quá dài*/
+font-weight: bold
+}
+.contact{
+    width: 624px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: -45px;
+}
+.contact .table{
+    width: 626px;
+    height: 488px;
+
+}
+
+.contact .table{
+    display: flex;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    
+}
+.contact .table .action .btn{
+    display: inline-block;
+    background: #171100;
+    text-align: center;
+    width: 622px;
+    height: 62px;
+    border-radius: 10px;
+   font-size: 1.7rem;
+justify-content: center;
+align-items: center;
+
+    cursor: pointer;
+    margin-top: -100px;
+}
+.contact .table .row1,.row2{
+    width: 295px;
+    height: 80px;
+}
+.contact .table h3{
+    font-weight: 700;
+    width: 295px;
+    height: 24px;
+}
+.contact .table p{
+    color: #cccccc;
+    width: 295px;
+    height: 48px;
+    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+   border: 1px solid #ccc;
+}
+.contact .table .row3{
+width: 626px;
+height: 80px;
+margin-top: -40px;
+}
+.contact .table .row3 p{
+    width: 626px;
+    height: 48px;
+
+}
+.contact .table .row4{
+    width: 626px;
+    height: 194px;
+    margin-top: -40px;
+}
+.contact .table .row4 p{
+    width: 626px;
+    height: 162px;
+  padding: 10px 40px 120px 20px;
+}
+footer{
+    background: #2e2100;
+    padding: 96px 135px 0;
+   margin-top: 600px;
+margin-bottom: auto;
+}
+.footer .row{
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+.footer .row .column{
+    width: 21.6%;
+}
+
+
+.footer .row .column:first-child{
+width: 35%;
+}
+.footer .desc{
+    margin-top: 18px;
+   max-width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    
+    line-height: 1.86;
+}
+.footer .socials{
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer .title{
+    padding-bottom: 14px;
+    padding-right: 48px;
+    display: inline-block;
+    border-bottom: 1px solid #59554b;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+
+}
+.footer .list{
+    margin-top: 28px;
+}
+
+.footer .list a{
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.footer .list li:last-child{
+    margin-bottom: 0;
+}
+.footer .list strong{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.footer .copy-right{
+    padding: 28px 0;
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+@media screen and (max-width: 768px) {
+    .blogs .item {
+        width: 100%; /* Mỗi item chiếm 100% chiều rộng */
+        margin-bottom: 20px;
+    }
+    .blogs .item .info {
+        padding: 10px;
+    }
+}
